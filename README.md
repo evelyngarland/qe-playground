@@ -1,2 +1,2 @@
 # qe-playground
-Test account for learning GitHub
+Test repo for learning GitHub
