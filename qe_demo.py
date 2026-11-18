@@ -1,16 +1,19 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Nov 18 11:41:10 2026
+Created on Wed Nov 18 11:48:00 2026
 
 @author: egarl
 """
 
-# Simple QE threshold experiment
+# QE experiment: classify scores by severity
 
-def classify_qe(score, threshold=85):
-    if score < threshold:
-        return "Human review"
-    return "Accept"
+def classify_qe(score):
+    if score < 70:
+        return "High priority review"
+    elif score < 85:
+        return "Normal review"
+    else:
+        return "Accept"
 
 scores = [92, 78, 85, 63, 97]
 
